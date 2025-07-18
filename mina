@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHAN THI HIEN LUONG | 포트폴리오</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(135deg, #f0f4f8, #dbe9f4);
+    color: #2c3e50;
+}
+nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #23395d;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    z-index: 100;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #c9d6ff;
+}
+section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8px);
+}
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #23395d, #406080);
+    color: white;
+    padding: 150px 20px 100px;
+}
+header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+h1 { font-size: 48px; margin-bottom: 10px; }
+p { font-size: 18px; line-height: 1.7; }
+h2 { font-size: 36px; color: #23395d; margin-bottom: 20px; }
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.project-card:hover { transform: translateY(-8px); }
+.project-card img { width: 100%; height: 160px; object-fit: cover; }
+.project-card .desc { padding: 20px; }
+.skill-bar { margin-bottom: 20px; }
+.skill-bar p { margin-bottom: 6px; font-weight: 600; }
+.bar {
+    background: #dbe9f4;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 16px;
+}
+.fill {
+    background: linear-gradient(135deg, #406080, #23395d);
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1.5s;
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 40px;
+    color: #7f8c8d;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home">홈</a>
+<a href="#intro">자기소개</a>
+<a href="#projects">프로젝트</a>
+<a href="#skills">기술</a>
+<a href="#contact">연락처</a>
+</nav>
+
+<header id="home">
+<img src="https://i.imgur.com/VyQ5WeK.png" alt="프로필 사진">
+<h1>Phan Thị Hiền Lương</h1>
+<p>💼 비즈니스 전략 · 📈 데이터 분석 · 🗣️ 고객 상담 전문가</p>
+</header>
+
+<section id="intro">
+<h2>🖊️ 자기소개</h2>
+
+<h3>📌 성장 배경</h3>
+<p>다문화 환경에서 자라며 다양한 문화와 사람들과 원활하게 소통하는 법을 배웠습니다.</p>
+
+<h3>📌 성격 및 강점</h3>
+<p>책임감이 강하고 성실하며, 새로운 도전에 두려움이 없습니다. 팀워크와 문제 해결에 강점을 가지고 있습니다.</p>
+
+<h3>📌 직무 역량</h3>
+<p>데이터 분석, 마케팅 기획, 고객 응대 경험이 풍부하며, 비즈니스 이해력과 커뮤니케이션 능력이 뛰어납니다.</p>
+
+<h3>📌 입사 후 포부</h3>
+<p>비즈니스 성장에 기여하고, 지속적인 자기계발로 전문성을 향상시키는 인재가 되겠습니다.</p>
+
+</section>
+
+<section id="product-video">
+<h2>🎥 제품 시연 영상</h2>
+ <video width="100%" controls>
+  <source src="product-video.mp4" type="video/mp4">
+  SlimFitVita++ 광고 동영상 project.
+
+
+</video>
+</section>
+
+<section id="projects">
+<h2>📁 주요 프로젝트</h2>
+<div class="projects">
+<div class="project-card">
+<img src="https://picsum.photos/300/200?random=1">
+<div class="desc">
+<h3>자기소개서 자동 생성기</h3>
+<p>웹 기반으로 자기소개서 자동 생성 서비스 개발</p>
+</div>
+</div>
+<div class="project-card">
+<img src="https://picsum.photos/300/200?random=2">
+<div class="desc">
+<h3>데이터 크롤링 파이프라인</h3>
+<p>데이터 자동 수집 및 분석 파이프라인 구축</p>
+</div>
+</div>
+<div class="project-card">
+<img src="https://picsum.photos/300/200?random=3">
+<div class="desc">
+<h3>AI 인터뷰 평가 서비스</h3>
+<p>AI를 활용한 면접 피드백 자동화 프로토타입 구축</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>🛡️ 보유 기술</h2>
+<div class="skill-bar">
+<p>Python & 데이터 분석</p>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+<div class="skill-bar">
+<p>Streamlit & ChatGPT 활용</p>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+<div class="skill-bar">
+<p>한국어 & 베트남어 커뮤니케이션</p>
+<p>쇼츠동영상 제작</p>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>📨 연락처</h2>
+<p>📧 hienluongajc5293@gmail.com</p>
+<p>☎️ 010-3226-9693</p>
+<p>🏠 서울시 중랑구 면목로84나길16</p>
+</section>
+
+<footer>
+&copy; 2025 Phan Thị Hiền Lương | GitHub Pages 기반 포트폴리오
+</footer>
+</body>
+</html>
